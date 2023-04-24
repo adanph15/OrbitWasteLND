@@ -1,0 +1,24 @@
+*, ::before, ::after{box-sizing: inherit;margin: 0;}
+li{list-style: none;}
+a{text-decoration: none; color: white;}
+a:hover{color: yellow;}
+img{width: 10em;}
+
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .ul-header{
+    display: flex;
+    gap: 6em;
+    font-size: 1.3em;
+}
+
+.logo>img{width: 10em;}
