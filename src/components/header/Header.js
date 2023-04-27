@@ -28,7 +28,7 @@ function Header() {
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="/solutions" class="nav-link">
               <img id="logos-nav" src={jasonimg[5]} />
               <span class="link-text">Solutions</span>
             </a>

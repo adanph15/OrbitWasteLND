@@ -1,9 +1,4 @@
-.title-container {
-    display: flex;
-    justify-content: center;
-}
-
-.hazards-body {
+.solutions-body {
     padding-top: 4vh;
     width: 90vw;
     padding-right: 0;
@@ -12,7 +7,7 @@
     justify-content: space-between;
 }
 
-.hazards-container {
+.solutions-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -22,20 +17,21 @@
     gap: 10px 30px;
 }
 
-.hazards-items {
+.solutions-items {
     display: flex;
 }
 
-.hazards-item-text-left {
+.solutions-item-text-left {
     width: 50%;
     padding-right: 3em;
     padding-top: 2em;
     text-align: right;
 }
 
-.hazards-item-text-right {
+.solutions-item-text.right {
     width: 50%;
     padding-right: 3em;
     padding-top: 2em;
-    text-align: left;
+    text-align: left; 
 }
+

@@ -6,7 +6,14 @@ export default function Home() {
   return (
     <>
       <Header />
-      <h1 className="title">Home</h1>
+      <div className="title-container">
+        <div className="title-text">
+        <h1 className="title">HOME</h1>
+        </div>
+        <div className="title-img">
+        <img src={jasonimg[7]}/> 
+        </div>
+      </div>
       <div className="home-body">
         <div className="home-container-left">
           <div className="home-tittle">
