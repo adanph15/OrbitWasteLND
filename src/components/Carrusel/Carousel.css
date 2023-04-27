@@ -1,0 +1,94 @@
+.carousel{text-align: center;}
+
+.card{
+    width: 100%;
+    height: 200px;
+    background: #333;
+    color: white;
+    font-size: 10px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/*.carousel{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-content{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 600px;
+}
+
+.carousel-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+main#cards-main{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    --items: 5;
+    --midle: 3;
+    --position: 1;
+    pointer-events: none;
+}
+
+div.item{
+    position: absolute;
+    padding: 10px;
+    width: 300px;
+    height: 400px;
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all 0.25s linear;
+    transform: rotateY(calc(-10deg * var(--r)))
+        translateX(calc(-300px * var(--r)));
+    z-index: calc((var(--position) - var(--abs)));
+}
+
+.item:nth-of-type(1){
+    --offset: 1;
+    background-color: rgba(255,255,255,0.055);
+}
+.item:nth-of-type(2){
+    --offset: 2;
+    background-color: rgba(255,255,255,0.055);
+}
+.item:nth-of-type(3){
+    --offset: 3;
+    background-color: rgba(255,255,255,0.055);
+}
+.item:nth-of-type(4){
+    --offset: 4;
+    background-color: rgba(255,255,255,0.055);
+}
+.item:nth-of-type(5){
+    --offset: 5;
+    background-color: rgba(255,255,255,0.055);
+}
+
+.pos1{--position:1;}
+.pos2{--position:2;}
+.pos3{--position:3;}
+.pos4{--position:4;}
+.pos5{--position:5;}*/
