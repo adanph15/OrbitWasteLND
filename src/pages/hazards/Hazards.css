@@ -24,18 +24,22 @@
 
 .hazards-items {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.hazards-item-text-left {
-    width: 50%;
-    padding-right: 3em;
-    padding-top: 2em;
-    text-align: right;
+.hazards-item-text{
+    text-align: justify;
+    padding-right: 5em;
+
 }
 
-.hazards-item-text-right {
-    width: 50%;
-    padding-right: 3em;
-    padding-top: 2em;
-    text-align: left;
+.hazards-items-img{
+    padding-right: 20em;
 }
+
+.hazards-items-img img{
+    width: 12vw;
+    border-radius: 210% ;
+}
+

@@ -1,0 +1,43 @@
+* {
+    background-image: url(/public/fondo.png);
+    color: white;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: yellow;
+}
+
+img {
+    width: 4em;
+}
+
+p {
+    color: #95A5A6;
+}
+
+h1 {
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}

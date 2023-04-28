@@ -1,14 +1,4 @@
-* {background-image: url(/public/fondo.png); color: white;}
 .home-tittle{text-align: center; width: 20vw;}
-
-h1{
-  align-items: center;
-  text-align: center;
-  color: white;
-  font-size: 3em;
-}
-
-p{color: #95A5A6 ;}
 
 .home-body{
   padding-top: 4vh;

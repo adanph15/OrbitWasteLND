@@ -3,7 +3,7 @@ import { FaTwitterSquare, FaGithubSquare } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer>
-      <div className="container">
+      <div className="footer-container">
         <div>
           <h1>Get in touch</h1>
           <ul className="ul-footer">
@@ -20,15 +20,14 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h1>NEWNS & INFO</h1>
+          <h1>News & Info</h1>
           <ul className="ul-footer">
-            <li>GIT</li>
-            <li>MAIL</li>
-            <li>TWITTER</li>
+            <li><a href="https://www.nasa.gov">Nasa</a></li>
+            <li><a href="https://www.spacex.com">SpaceX</a></li>
           </ul>
         </div>
       </div>
-      <div className="container-logo">
+      <div className="footer-container-logo">
         <div><p>© 2023 WasteOrbit | By Adán Pérez Hernández</p></div>
         <div><img className="mini-logo" src={`/logo.png`}/></div>
       </div>
