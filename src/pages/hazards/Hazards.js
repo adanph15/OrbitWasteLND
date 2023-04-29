@@ -44,7 +44,7 @@ export default function Hazards() {
             <div className="hazards-item-text">
               <h2>RADIOACTIVE CONTAMINATION</h2>
               <p>
-                Perhaps it is the one that scares us the most because of its name. Some satellites make use of a few kilograms (sometimes not even that) of radioactive substances. When falling back on the atmosphere it can be contaminated. If it is not burned on re-entry, then it is the soil that is contaminated. At the moment it is a minor problem, but let's imagine what would happen with more satellites.
+                Perhaps it is the one that scares us the most because of its name. Some satellites make use of a few kilograms of radioactive substances. When falling back on the atmosphere it can be contaminated. If it is not burned on re-entry, then it is the soil that is contaminated. At the moment it is a minor problem, but let's imagine what would happen with more satellites.
               </p>
             </div>
             <div class="hazards-items-img">
@@ -56,7 +56,7 @@ export default function Hazards() {
               <h2>CHEMICAL CONTAMINATION</h2>
               <p>
                 According to Nikoghosyan, the largest source of chemical pollution in the atmosphere appears during the release of rocket fuel. At the moment we do not know how these could work with electricity and without chemical waste, such as mobility at ground level.
-                Of course, the researcher puts this contamination in its place. Compared to surface pollution (air conditioning, mobility, meat industry), rocket pollution is derisory.                        </p>
+                Of course, the researcher puts this contamination in its place. Compared to surface pollution , rocket pollution is derisory.</p>
             </div>
             <div class="hazards-items-img">
               <img src={`hazard4.jpg`} />

@@ -8,10 +8,10 @@ export default function Home() {
       <Header />
       <div className="title-container">
         <div className="title-text">
-        <h1 className="title">HOME</h1>
+          <h1 className="title">HOME</h1>
         </div>
         <div className="title-img">
-        <img src={jasonimg[7]}/> 
+          <img src={jasonimg[7]} />
         </div>
       </div>
       <div className="home-body">

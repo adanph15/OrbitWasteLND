@@ -7,9 +7,11 @@ A web page to learn the basic concepts about space waste, whether it is the type
 
 ## Advertisement
 
-The web is not yet responsive, so it will only be appropriate to access it from a pc or laptop.
-This will be changed for future installments but due to lack of time and some errors, I will try to make it responsive for the next installment.
+The menu on tablets and mobiles devices only works with three planets that are the three pages.
 
+
+## Figma Desing
+- [Figma:](https://www.figma.com/file/v7AfcfS4ft8wLIgYiDAPeL/OrbitWasteAdan?node-id=0%3A1&t=tzUgrHcNWfHYFI4K-1)
 
 ### Prerequisites
 
@@ -19,8 +21,7 @@ Requirements of the software:
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development
-environment running
+To install the components and run the website.
 
 In the project directory, you can run:
 
