@@ -1,6 +1,8 @@
-* {background-image: url(/public/fondo.png);color: white;}
-
+* /*{background-image: url(/public/fondo.png);color: white;}
+*/
 *,::before,::after {box-sizing: inherit;margin: 0;}
+
+body{background-image: url(/public/fondo.png);color: white;}
 
 html {box-sizing: border-box;}
 

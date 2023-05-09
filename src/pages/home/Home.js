@@ -3,8 +3,10 @@ import Header from "../../components/header/Header";
 import "./Home.css";
 import jasonimg from "../../assets/img/jasonimg";
 export default function Home() {
+  
   return (
     <>
+    <body>
       <Header />
       <div className="title-container">
         <div className="title-text">
@@ -82,6 +84,7 @@ export default function Home() {
         </div>
       </div>
       <Footer />
+      </body>
     </>
   );
 };

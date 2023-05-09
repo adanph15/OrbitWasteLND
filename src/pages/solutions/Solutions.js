@@ -4,7 +4,8 @@ import jasonimg from "../../assets/img/jasonimg";
 import "./Solutions.css";
 export default function Solutions() {
     return (
-        <>
+        <>  
+        <body>
             <Header />
             <div className="title-container">
                 <div className="title-text">
@@ -61,8 +62,8 @@ export default function Solutions() {
                     </div>
                 </div>
             </div>
-
             <Footer />
+            </body>
         </>
     );
 };
