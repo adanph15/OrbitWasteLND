@@ -33,7 +33,12 @@ function Header() {
               <span class="link-text">Solutions</span>
             </a>
           </li>
-
+          <li class="nav-item">
+            <a href="/news" class="nav-link">
+              <img id="logos-nav" src={jasonimg[8]} />
+              <span class="link-text">News</span>
+            </a>
+          </li>
           <li class="nav-item" id="themeButton">
 
           </li>

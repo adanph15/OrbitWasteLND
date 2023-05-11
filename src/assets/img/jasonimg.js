@@ -6,6 +6,7 @@ import wastehome from "./wastehome.jpg";
 import logosolutions from "./logosolutions.png";
 import logohazards from "./logohazards.png";
 import logohome from "./logohome.png";
+import logonews from "./logonews.png";
 
 
 
@@ -17,5 +18,6 @@ export default[
     wastehome,
     logosolutions,
     logohazards,
-    logohome
+    logohome,
+    logonews
 ]

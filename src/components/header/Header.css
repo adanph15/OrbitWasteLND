@@ -8,6 +8,7 @@ main {
   background-color: var(--bg-primary);
   transition: width 600ms ease;
   overflow: hidden;
+  background-image: url(/public/fondo.png);
 }
 
 .navbar-nav {

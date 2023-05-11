@@ -1,4 +1,4 @@
-import { ref, get, remove, push } from "firebase/database";
+import { ref, get, remove, push , update , set } from "firebase/database";
 import database from "../firebase";
 
 const newsRef = ref(database, "/news");
@@ -19,4 +19,22 @@ const addNews = (title, content, source) => {
     });
 }
 
-export default {getAllnews,removeNews,addNews};
+const updateNews = (key, title, content, source) => {
+    const newsToUpdateRef = ref(database, `/news/${key}`);
+    return update(newsToUpdateRef, {
+      title: title,
+      content: content,
+      source: source
+    });
+  }
+  
+  const editNews = (key, title, content, source) => {
+    const newsToUpdateRef = ref(database, `/news/${key}`);
+    return set(newsToUpdateRef, {
+      title: title,
+      content: content,
+      source: source
+    });
+  }
+  
+  export default { getAllnews, removeNews, addNews, editNews };

@@ -46,13 +46,13 @@ export default function News() {
     <>
       <Header />
       <div className="title-container">
-                <div className="title-text">
-                    <h1 className="title">NEWS</h1>
-                </div>
-                <div className="title-img">
-                    <img src={jasonimg[5]} />
-                </div>
-            </div>
+        <div className="title-text">
+          <h1 className="title">NEWS</h1>
+        </div>
+        <div className="title-img">
+          <img src={jasonimg[8]} />
+        </div>
+      </div>
       <div className="news-insert">
         <div className="news-insert-form">
           <form onSubmit={addNews}>

@@ -1,5 +1,5 @@
 import "./Footer.css";
-import { FaTwitterSquare, FaGithubSquare } from "react-icons/fa";
+import { FaTwitterSquare, FaGithubSquare , FaRssSquare , faFigma } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer>
@@ -24,6 +24,8 @@ export default function Footer() {
           <ul className="ul-footer">
             <li><a href="https://www.nasa.gov">Nasa</a></li>
             <li><a href="https://www.spacex.com">SpaceX</a></li>
+            <li><FaRssSquare className="icon"/><a href="https://twitter.com/adn_1_5">Twitter</a></li>
+            <li><faFigma className="icon"/><a href="https://twitter.com/adn_1_5">Twitter</a></li>
           </ul>
         </div>
       </div>
