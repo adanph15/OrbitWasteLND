@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+  <title>OrbitWaste</title>
+  <link>https://www.w3schools.com</link>
+  <description>Web to learn the basics about the Space Junk</description>
+  <language>en-us</language>
+  <item>
+    <title>ESA will launch the first satellite to remove space debris in 2025</title>
+    <link>https://elpais.com/elpais/2019/12/11/ciencia/1576058114_443678.html</link>
+    <description>ClearSpace-1 is a mission that will test technology to address a threat to Earth observation or communication systems</description>
+    <author>El País</author>
+  </item>
+  <item>
+    <title>Junk rain: 100 tons of space junk fall on Earth a year</title>
+    <link>https://elpais.com/elpais/2018/02/16/eps/1518774498_638902.html?autoplay=1</link>
+    <description>More than 7,000 tons of satellite junk are flying around the Earth. The first goal is to detect all fragments. The last one: get rid of them</description>
+    <author>El País</author>
+  </item>
+  <item>
+    <title>A laboratory to transform space junk</title>
+    <link>https://elpais.com/elpais/2018/10/06/ciencia/1538817550_764959.html</link>
+    <description>Dutch artist Daan Roosegaarde presents his project to turn the remains of satellites and rockets in orbit around the Earth into sustainable products</description>
+    <author>El País</author>
+  </item>
+  <item>
+    <title>The Japanese who has the solution to sweep the space</title>
+    <link>https://elpais.com/internacional/2019/05/16/mundo_global/1558010087_929009.html</link>
+    <description>Nobu Okada will launch satellites into orbit that locate, track and magnetize trash, then enter the atmosphere to immolate themselves with the debris</description>
+    <author>El País</author>
+  </item>
+  <item>
+    <title>The remains of a Chinese rocket, visible from various points in Spain when crossing the sky</title>
+    <link>https://elpais.com/ciencia/2022-06-21/los-restos-de-un-cohete-chino-visibles-desde-varios-puntos-de-espana-al-atravesar-el-cielo.html</link>
+    <description>https://elpais.com/ciencia/2022-06-21/los-restos-de-un-cohete-chino-visibles-desde-varios-puntos-de-espana-al-atravesar-el-cielo.html</description>
+    <author>El País</author>
+  </item>
+</channel>
+</rss>

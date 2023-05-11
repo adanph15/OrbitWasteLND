@@ -14,7 +14,6 @@ function Header() {
               <span class="link-text logo-text">OrbitWaste</span>
             </a>
           </li>
-
           <li class="nav-item">
             <a href="/home" class="nav-link">
               <img id="logos-nav" src={jasonimg[7]} />
@@ -37,6 +36,12 @@ function Header() {
             <a href="/news" class="nav-link">
               <img id="logos-nav" src={jasonimg[8]} />
               <span class="link-text">News</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/news" class="nav-link">
+              <img id="logos-nav" src={jasonimg[8]} />
+              <span class="link-text">NuevaPagina</span>
             </a>
           </li>
           <li class="nav-item" id="themeButton">

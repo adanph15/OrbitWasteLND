@@ -6,6 +6,7 @@ import Footer from "../../components/footer/Footer";
 import jasonimg from "../../assets/img/jasonimg";
 export default function News() {
   const [news, setNews] = useState([]);
+  const [editingNews, setEditingNews] = useState(null);
 
   const getAllnews = () => {
     NewsService.getAllnews().then(data => {
@@ -37,6 +38,18 @@ export default function News() {
       getAllnews();
     })
   }
+
+  const updateNews = (e, key) => {
+    e.preventDefault();
+    const title = e.target.title.value;
+    const content = e.target.content.value;
+    const source = e.target.source.value;
+    NewsService.updateNews(key, title, content, source).then(() => {
+      setEditingNews(null);
+      getAllnews();
+    });
+  }
+
 
   useEffect(() => {
     getAllnews();
@@ -85,22 +98,32 @@ export default function News() {
 
 
       {news.map(b =>
-        <div className="news-container">
-          <div className="news-card">
-            <div className="news-card-title">
-              <h1>{b.title}</h1>
+          <div className="news-container">
+            <div className="news-card">
+              <div className="news-card-title">
+                <h1>{b.title}</h1>
+              </div>
+              <div className="news-card-content">
+                <p>{b.content}</p>
+              </div>
+              <div className="news-card-source">
+                <h5>{b.source}</h5>
+              </div>
+              <div className="news-card-buttom">
+                <button className="button" id="button-delete" onClick={() => removeNews(b.key)}><span>Delete</span></button>
+                <button className="button" id="button-update" onClick={() => setEditingNews(b.key)}><span>Edit</span></button>
+              </div>
             </div>
-            <div className="news-card-content">
-              <p>{b.content}</p>
-            </div>
-            <div className="news-card-source">
-              <h5>{b.source}</h5>
-            </div>
-            <div className="news-card-buttom">
-              <button className="button" id="button-delete" onClick={() => removeNews(b.key)}><span>Delete</span></button>
-            </div>
+            {editingNews === b.key && (
+              <form onSubmit={(e) => updateNews(e, b.key)}>
+                <input type="text" name="title" defaultValue={b.brand} />
+                <input type="text" name="content" defaultValue={b.content} />
+                <input type="text" name="source" defaultValue={b.source} />
+                <button type="submit">Actualizar</button>
+                <button type="button" onClick={() => setEditingNews(null)}>Cancel</button>
+              </form>
+            )}
           </div>
-        </div>
       )}
       <Footer />
     </>
