@@ -1,17 +1,55 @@
 import "./Header.css";
-export default function Header() {
+import jasonimg from "../../assets/img/jasonimg";
+
+function Header() {
   return (
-    <header>
-      <div className="menu">
-        <div className="logo"><img src={`/logo.png`}/></div>
-        <div className="ul-div">
-          <ul className="ul-header">
-            <li><a><h2>Home</h2></a></li>
-            <li><a><h2>Solutions</h2></a></li>
-            <li><a><h2>Hazard</h2></a></li>
-          </ul>
-        </div>
-      </div>
-    </header>
+    <>
+      <head>
+        <script defer src="theme.js"></script>
+      </head>
+      <nav class="navbar">
+        <ul class="navbar-nav">
+          <li class="logo">
+            <a href="#" class="nav-link">
+              <span class="link-text logo-text">OrbitWaste</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/home" class="nav-link">
+              <img id="logos-nav" src={jasonimg[7]} />
+              <span class="link-text">Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/hazards" class="nav-link">
+              <img id="logos-nav" src={jasonimg[6]} />
+              <span class="link-text">Hazards</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/solutions" class="nav-link">
+              <img id="logos-nav" src={jasonimg[5]} />
+              <span class="link-text">Solutions</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/news" class="nav-link">
+              <img id="logos-nav" src={jasonimg[8]} />
+              <span class="link-text">News</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/starship" class="nav-link">
+              <img id="logos-nav" src={jasonimg[9]} />
+              <span class="link-text">Starship</span>
+            </a>
+          </li>
+          <li class="nav-item" id="themeButton">
+
+          </li>
+        </ul>
+      </nav>
+    </>
   );
-}
+};
+export default Header;

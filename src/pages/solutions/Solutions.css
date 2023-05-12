@@ -1,0 +1,38 @@
+.solutions-body {
+    padding-top: 4vh;
+    width: 90vw;
+    padding-right: 0;
+    padding-left: 20em;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.solutions-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    gap: 10px 30px;
+}
+
+.solutions-items {
+    display: flex;
+}
+
+.solutions-item-text-left {
+    width: 50%;
+    padding-right: 3em;
+    padding-top: 2em;
+    text-align: right;
+}
+
+.solutions-item-text-right {
+    width: 50%;
+    padding-left: 3em;
+    padding-top: 2em;
+    text-align: left; 
+}
+

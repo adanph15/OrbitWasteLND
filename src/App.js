@@ -1,15 +1,30 @@
 
 import './App.css';
-import Footer from './components/footer/Footer';
-import Header from './components/header/Header';
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Home from './pages/home/Home';
+import Hazards from './pages/hazards/Hazards';
+import Solutions from './pages/solutions/Solutions';
+import News from './pages/news/News';
+import Starship from './pages/starship/Starship';
+import "./Main.css";
+import Privacity from './pages/privacity/Privacity';
 
 function App() {
   return (
     <>
-    <Home />
+    <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />}/>
+            <Route path="/home" element={<Home />}/>
+            <Route path="/hazards" element={<Hazards />}/>
+            <Route path="/solutions" element={<Solutions />}/>
+            <Route path="/news" element={<News />}/>
+            <Route path="/starship" element={<Starship />}/>
+            <Route path="/privacity" element={<Privacity />}/>
+          </Routes>
+    </BrowserRouter>
     </>
   );
 }
-
 export default App;
+
