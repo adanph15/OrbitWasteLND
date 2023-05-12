@@ -5,8 +5,9 @@ import Home from './pages/home/Home';
 import Hazards from './pages/hazards/Hazards';
 import Solutions from './pages/solutions/Solutions';
 import News from './pages/news/News';
+import Starship from './pages/starship/Starship';
 import "./Main.css";
-import Map from './pages/map/Map';
+
 function App() {
   return (
     <>
@@ -17,7 +18,7 @@ function App() {
             <Route path="/hazards" element={<Hazards />}/>
             <Route path="/solutions" element={<Solutions />}/>
             <Route path="/news" element={<News />}/>
-            <Route path="/map" element={<Map />}/>
+            <Route path="/starship" element={<Starship />}/>
           </Routes>
     </BrowserRouter>
     </>

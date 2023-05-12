@@ -7,7 +7,9 @@ import logosolutions from "./logosolutions.png";
 import logohazards from "./logohazards.png";
 import logohome from "./logohome.png";
 import logonews from "./logonews.png";
-
+import logostarship from "./logostarship.png";
+import starship from "./starship.jpg";
+import starship2 from "./starship2.jpg";
 
 
 export default[
@@ -19,5 +21,8 @@ export default[
     logosolutions,
     logohazards,
     logohome,
-    logonews
+    logonews,
+    logostarship,
+    starship,
+    starship2
 ]

@@ -1,0 +1,29 @@
+.starship-body{
+    border: 1px solid white;
+    padding-top: 4vh;
+    padding-right: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.starship-items{
+    text-align: center;
+}
+
+.starship-item-text{
+    padding-left: 16em;
+    padding-right: 16em;
+    padding-bottom: 1em;
+}
+
+.starship-item-img img{
+    width: 70em;
+}
+
+.starship-item-video iframe{
+    width: 55em;
+    height: 30em;
+    padding-bottom: 1em;
+}
+

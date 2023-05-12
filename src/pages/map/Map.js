@@ -1,57 +1,43 @@
-import React, { useEffect, useRef } from 'react';
-import * as d3 from 'd3';
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-import jasonimg from "../../assets/img/jasonimg";
-import "./Map.css";
+import React, { useRef, useEffect } from 'react';
+import * as THREE from 'three';
 
 
-const BarChart = ({ data }) => {
-  const ref = useRef();
+const scene = new THREE.Scene();
+
+function Map() {
+  const sceneRef = useRef();
 
   useEffect(() => {
-    const svg = d3.select(ref.current);
-
-    // Configuración del gráfico
-    const margin = { top: 20, right: 20, bottom: 30, left: 40 };
-    const width = +svg.attr('width') - margin.left - margin.right;
-    const height = +svg.attr('height') - margin.top - margin.bottom;
-    const x = d3.scaleBand().range([0, width]).padding(0.1);
-    const y = d3.scaleLinear().range([height, 0]);
-    const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
-
-    // Configuración de los datos
-    x.domain(data.map(d => d.label));
-    y.domain([0, d3.max(data, d => d.value)]);
-
-    // Dibujar barras
-    g.selectAll('.bar')
-      .data(data)
-      .enter()
-      .append('rect')
-      .attr('class', 'bar')
-      .attr('x', d => x(d.label))
-      .attr('y', d => y(d.value))
-      .attr('width', x.bandwidth())
-      .attr('height', d => height - y(d.value));
-
-    // Dibujar eje X
-    g.append('g')
-      .attr('class', 'axis axis--x')
-      .attr('transform', `translate(0,${height})`)
-      .call(d3.axisBottom(x));
-
-    // Dibujar eje Y
-    g.append('g')
-      .attr('class', 'axis axis--y')
-      .call(d3.axisLeft(y).ticks(5));
-  }, [data]);
+    const scene = new THREE.Scene();
+    sceneRef.current.appendChild(scene);
+  }, []);
 
   return (
-    <svg ref={ref} width="500" height="300">
-      {/* No es necesario agregar elementos aquí */}
-    </svg>
+    <div ref={sceneRef} />
   );
-};
+}
 
-export default BarChart;
+const camera = new THREE.PerspectiveCamera(
+  75, // campo de visión
+  window.innerWidth / window.innerHeight, // relación de aspecto
+  0.1, // distancia del plano cercano
+  1000 // distancia del plano lejano
+);
+camera.position.set(0, 0, 10);
+scene.add(camera);
+
+const earthGeometry = new THREE.SphereGeometry(5, 32, 32);
+const earthTexture = new THREE.TextureLoader().load('path/to/earth/texture.jpg');
+const earthMaterial = new THREE.MeshBasicMaterial({ map: earthTexture });
+const earthMesh = new THREE.Mesh(earthGeometry, earthMaterial);
+scene.add(earthMesh);
+const boxGeometry = new THREE.BoxGeometry(1, 1, 1);
+const boxMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+const boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);
+boxMesh.position.set(1, 2, 3);
+scene.add(boxMesh);
+boxMesh.addEventListener('click', () => {
+  boxMesh.position.set(Math.random() * 10 - 5, Math.random() * 10 - 5, Math.random() * 10 - 5);
+});
+
+export default Map;

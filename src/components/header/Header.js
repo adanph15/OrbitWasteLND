@@ -39,9 +39,9 @@ function Header() {
             </a>
           </li>
           <li class="nav-item">
-            <a href="/news" class="nav-link">
-              <img id="logos-nav" src={jasonimg[8]} />
-              <span class="link-text">NuevaPagina</span>
+            <a href="/starship" class="nav-link">
+              <img id="logos-nav" src={jasonimg[9]} />
+              <span class="link-text">Starship</span>
             </a>
           </li>
           <li class="nav-item" id="themeButton">
