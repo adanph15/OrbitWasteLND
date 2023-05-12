@@ -10,7 +10,7 @@ import logonews from "./logonews.png";
 import logostarship from "./logostarship.png";
 import starship from "./starship.jpg";
 import starship2 from "./starship2.jpg";
-
+import logoprivacity from "./logoprivacity.png";
 
 export default[
     satelite,
@@ -24,5 +24,6 @@ export default[
     logonews,
     logostarship,
     starship,
-    starship2
+    starship2,
+    logoprivacity
 ]

@@ -61,6 +61,23 @@ h1 {align-items: center;text-align: center;color: white;font-size: 3em;}
 
     .solutions-item-text-right {width: 100%;padding-right: 1em;padding-top: 1em;text-align: right;}
 
+    /*STARSHIP*/
+/*-----------------------------------------------*/
+    .starship-body{padding-top: 11vh;padding-right: 0;display: flex;justify-content: start;}
+    
+    .starship-items{text-align: left;padding-bottom: 1em;}
+    
+    .starship-item-text{padding-left: 0;padding-right: 1em;padding-bottom: 1em;}
+
+    .starship-item-img img{width: 22em;}
+
+    .starship-item-video iframe{width: 24em;height: 10em;padding-bottom: 1em;}
+
+    /*NEWS*/
+/*-----------------------------------------------*/      
+    .news-insert {padding-top: 7em;padding-left: 1em;}
+      
+    .news-container {padding-left: 1em;padding-top: 2em;}
 }
 
  @media only screen and (min-width: 768px) {
@@ -106,7 +123,24 @@ h1 {align-items: center;text-align: center;color: white;font-size: 3em;}
 
     .solutions-item-text-right {width: 100%;padding-right: 1em;padding-top: 1em;text-align: right;}
 
- }
+    /*STARSHIP*/
+/*-----------------------------------------------*/
+    .starship-body{padding-top: 1em;justify-content: center;}
+    
+    .starship-items{text-align: center;padding-bottom: 1em;}
+
+    .starship-item-text{padding-left: 5em;padding-right: 1em;padding-bottom: 1em;}
+
+    .starship-item-img img{width: 40em;}
+
+    .starship-item-video iframe{width: 40em;height: 30em;padding-bottom: 1em;}
+    
+    /*NEWS*/
+/*-----------------------------------------------*/      
+    .news-insert {padding-top: 1em;padding-left: 6em;}
+  
+    .news-container {padding-left: 6em;}
+}
 
  @media only screen and (min-width: 992px) {
     /*FOOTER*/
@@ -146,6 +180,17 @@ h1 {align-items: center;text-align: center;color: white;font-size: 3em;}
 
     .solutions-item-text-right {width: 100%;padding-right: 10em;padding-top: 1em;text-align: left;}
 
- }
+    /*STARSHIP*/
+/*-----------------------------------------------*/
+    .starship-item-text{padding-left: 16em;padding-right: 16em;padding-bottom: 1em;}
 
- 
+    .starship-item-img img{width: 50em;}
+
+    .starship-item-video iframe{width: 50em;height: 30em;padding-bottom: 1em;}
+    
+    /*NEWS*/
+/*-----------------------------------------------*/      
+    .news-insert {padding-top: 1em;padding-left: 16em;}
+  
+    .news-container {padding-left: 16em;}
+}

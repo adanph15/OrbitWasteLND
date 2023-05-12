@@ -1,5 +1,5 @@
 import "./Footer.css";
-import { FaTwitterSquare, FaGithubSquare , FaRssSquare , FaFigma } from "react-icons/fa";
+import { FaTwitterSquare, FaGithubSquare , FaRssSquare , FaFigma ,  FaLock } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer>
@@ -24,6 +24,7 @@ export default function Footer() {
           <ul className="ul-footer">
             <li><FaRssSquare className="icon"/><a href="\rss\OrbitWaste.xml">RSS</a></li>
             <li><FaFigma className="icon"/><a href="https://www.figma.com/file/v7AfcfS4ft8wLIgYiDAPeL/OrbitWasteAdan?node-id=0%3A1&t=tzUgrHcNWfHYFI4K-1">Figma</a></li>
+            <li><FaLock className="icon"/><a href="/privacity">Privacity</a></li>
           </ul>
         </div>
       </div>

@@ -1,0 +1,12 @@
+.privacity-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.privacity-item p{
+    color: white;
+    font-size: 1.5em;
+    padding-left: 11em;
+    padding-right: 1em;
+}

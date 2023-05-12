@@ -50,7 +50,6 @@ export default function News() {
     });
   }
 
-
   useEffect(() => {
     getAllnews();
   }, []);
@@ -95,35 +94,45 @@ export default function News() {
           </form>
         </div>
       </div>
-
-
       {news.map(b =>
-          <div className="news-container">
-            <div className="news-card">
-              <div className="news-card-title">
-                <h1>{b.title}</h1>
-              </div>
-              <div className="news-card-content">
-                <p>{b.content}</p>
-              </div>
-              <div className="news-card-source">
-                <h5>{b.source}</h5>
-              </div>
-              <div className="news-card-buttom">
-                <button className="button" id="button-delete" onClick={() => removeNews(b.key)}><span>Delete</span></button>
-                <button className="button" id="button-update" onClick={() => setEditingNews(b.key)}><span>Edit</span></button>
+        <div className="news-container">
+          <div className="news-card">
+            <div className="news-card-title">
+              <h1>{b.title}</h1>
+            </div>
+            <div className="news-card-content">
+              <p>{b.content}</p>
+            </div>
+            <div className="news-card-source">
+              <h5>{b.source}</h5>
+            </div>
+            <div className="news-card-buttom">
+              <button className="button" id="button-delete" onClick={() => removeNews(b.key)}><span>Delete</span></button>
+              <button className="button" id="button-update" onClick={() => setEditingNews(b.key)}><span>Edit</span></button>
+            </div>
+          </div>
+          {editingNews === b.key && (
+            <div className="news-update">
+              <div className="news-update-form">
+                <form onSubmit={(e) => updateNews(e, b.key)}>
+                  <div className="news-update-form-container-input">
+                    <input type="text" name="title" defaultValue={b.title} />
+                  </div>
+                  <div className="news-update-form-container-input">
+                    <input type="text" name="content" defaultValue={b.content} />
+                  </div>
+                  <div className="news-update-form-container-input">
+                    <input type="text" name="source" defaultValue={b.source} />
+                  </div>
+                  <div className="news-update-form-container-button">
+                  <button  className="button" id="button-delete" type="button" onClick={() => setEditingNews(null)}><span>Cancel</span></button>
+                    <button className="button" id="button-update" type="submit"><span>Update</span></button>
+                  </div>
+                </form>
               </div>
             </div>
-            {editingNews === b.key && (
-              <form onSubmit={(e) => updateNews(e, b.key)}>
-                <input type="text" name="title" defaultValue={b.brand} />
-                <input type="text" name="content" defaultValue={b.content} />
-                <input type="text" name="source" defaultValue={b.source} />
-                <button type="submit">Actualizar</button>
-                <button type="button" onClick={() => setEditingNews(null)}>Cancel</button>
-              </form>
-            )}
-          </div>
+          )}
+        </div>
       )}
       <Footer />
     </>

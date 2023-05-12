@@ -27,6 +27,24 @@ input {
   padding-top: 4px;
 }
 
+.news-update-form {
+  width: 90%;
+  border: 1px solid white;
+  background-color: #212121;
+}
+
+.news-update-form-container {
+  display: flex;
+  flex-direction: column;
+}
+.news-update-form-container-input{
+  margin-left: 2vw;
+}
+
+.news-update-form-container-button {
+  padding-top: 4px;
+}
+
 .news-container {
   padding-left: 16em;
   padding-top: 2em;

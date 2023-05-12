@@ -7,6 +7,7 @@ import Solutions from './pages/solutions/Solutions';
 import News from './pages/news/News';
 import Starship from './pages/starship/Starship';
 import "./Main.css";
+import Privacity from './pages/privacity/Privacity';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/solutions" element={<Solutions />}/>
             <Route path="/news" element={<News />}/>
             <Route path="/starship" element={<Starship />}/>
+            <Route path="/privacity" element={<Privacity />}/>
           </Routes>
     </BrowserRouter>
     </>

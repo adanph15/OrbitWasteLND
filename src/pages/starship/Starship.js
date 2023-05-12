@@ -16,7 +16,6 @@ function Starship() {
                         <img src={jasonimg[9]} />
                     </div>
                 </div>
-
                 <div className="starship-body">
                     <div className="starship-container">
                         <div class="starship-items">
