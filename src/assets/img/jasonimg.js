@@ -11,6 +11,12 @@ import logostarship from "./logostarship.png";
 import starship from "./starship.jpg";
 import starship2 from "./starship2.jpg";
 import logoprivacity from "./logoprivacity.png";
+import news5 from "./news5.jpg";
+import news4 from "./news4.gif";
+import news3 from "./news3.jpg";
+import news2 from "./news2.gif";
+import news1 from "./news1.jpg";
+
 
 export default[
     satelite,
@@ -25,5 +31,10 @@ export default[
     logostarship,
     starship,
     starship2,
-    logoprivacity
+    logoprivacity,
+    news5,
+    news4,
+    news3,
+    news2,
+    news1
 ]

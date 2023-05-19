@@ -1,0 +1,24 @@
+.news-body{
+    padding-left: 16em;
+    padding-right: 16em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-body-title{
+    text-align: center;
+}
+
+.news-body-text{
+    text-align: justify;
+}
+
+.news-body-text p{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.news-body-img img{
+    width: 40em;
+}

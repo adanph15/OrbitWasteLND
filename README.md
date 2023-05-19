@@ -5,13 +5,21 @@
 A web page to learn the basic concepts about space waste, whether it is the types, the hazards and possible solutions.
 
 
-## Advertisement
+## Hosting
 
-The menu on tablets and mobiles devices only works with three planets that are the three pages.
+- [Link:](https://orbitwaste-4c6aa.web.app)
 
 
 ## Figma Desing
+
 - [Figma:](https://www.figma.com/file/v7AfcfS4ft8wLIgYiDAPeL/OrbitWasteAdan?node-id=0%3A1&t=tzUgrHcNWfHYFI4K-1)
+
+
+## Feed reader
+
+[![rss1.jpg](https://i.postimg.cc/YqS19fXF/rss1.jpg)](https://postimg.cc/grfwtRbc)
+
+[![rss2.jpg](https://i.postimg.cc/sX6g0SpF/rss2.jpg)](https://postimg.cc/ftdsVV25)
 
 ### Prerequisites
 
@@ -30,15 +38,6 @@ In the project directory, you can run:
 In the project directory, you can run:
 
 	npm start
-
-
-## Versioning
-
-To see the latest version you will have to move to the "develop" branch since the page is still under development.
-
-To move to the branch, you can run:
-
-	git checkout develop
 
 
 ## Acknowledgments

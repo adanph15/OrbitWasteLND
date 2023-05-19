@@ -78,7 +78,13 @@
 .flip-box-back {
   display: flex;
   justify-content: center;
+  align-items: center;
   color: white;
   transform: rotateY(180deg);
   background-image: url(/public/fondo.png);
+}
+
+.flip-box-back img{
+  width: 50%;
+  height: 50%;
 }
